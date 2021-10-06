@@ -16,5 +16,5 @@ steps:
     #password: pa55word
     insecure: true
     dockerfile: Dockerfile
-    repo: 10.10.10.3:8080/tests
+    repo: 10.10.10.3:8080/test-cedit
     registry: 10.10.10.3:8080
