@@ -1,0 +1,23 @@
+kind: pipeline
+type: kubernetes
+name: default
+
+steps:
+- name: greeting
+  image: alpine
+  commands:
+  - echo helloz
+  - echo worldz
+
+- name: docker
+  image: plugins/docker
+  settings:
+    #username: kevinbacon
+    #password: pa55word
+    insecure: true
+      #dockerfile: Dockerfile
+    dockerfile: Dockerfile.drone
+    repo: 10.10.10.3:8080/test-cedit
+    registry: 10.10.10.3:8080
+      #- name: some tests
+      #- name: deploy to k8s
