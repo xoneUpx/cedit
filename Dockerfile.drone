@@ -5,7 +5,7 @@ ENV PATH /opt/app/node_modules/.bin:$PATH
 #COPY ./app/package-lock.json ./
 #RUN npm i -g npm
 #USER node
-RUN apk -U --no-cache add git
+RUN apk add -U --no-cache git
 RUN git clone https://github.com/xoneUpx/cedit.git .
 RUN npm i
 #npm build and run on server
