@@ -9,7 +9,7 @@ steps:
   - echo helloz
   - echo worldz
 - name: test
-  image: docker.io/node:alpine
+  image: node
   commands:
   - export PATH:$PATH:$(pwd)/node_modules/.bin
   - npm i
