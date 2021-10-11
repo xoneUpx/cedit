@@ -7,4 +7,5 @@ COPY ./app/package-lock.json ./
 #USER node
 RUN npm i
 RUN chmod -R 0777 /opt/app/node_modules
+COPY ./app .
 #RUN npm i -D
