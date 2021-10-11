@@ -13,7 +13,7 @@ services:
     ports:
       - 3000:3000
         #environment:
-      #- DB_HOST= 
+      #- DB_HOST=
       #- DB_CREDENTIALS=
       #- BACKEND_IP=
       #- BACKEND_PORT=
@@ -21,9 +21,11 @@ services:
     stdin_open: true
     tty: true
     user: node
+    environment:
+      - CHOKIDAR_USEPOLLING=true
     #command: ["npm", "run", "s", "--silent"]
-    command: ["npm", "start"] 
-#    depends_on: 
+    command: ["npm", "start"]
+#    depends_on:
 #      - node-database
 #
 #  test-backend:
@@ -56,7 +58,7 @@ services:
 #      - MONGO_INITDB_ROOT_USERNAME=mongo
 #      - MONGO_INITDB_ROOT_PASSWORD=mongo
 #
-#  nginx:    
+#  nginx:
 #    image: nginx:alpine
 #    container_name: nginx
 #    volumes:
