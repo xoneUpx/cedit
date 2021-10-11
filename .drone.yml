@@ -4,12 +4,12 @@ name: default
 
 steps:
 - name: greeting
-  image: alpine
+  image: node:alpine
   commands:
   - echo helloz
   - echo worldz
 - name: test
-  image: node
+  image: node:alpine
   commands:
   - export PATH:$PATH:$(pwd)/node_modules/.bin
   - npm i
