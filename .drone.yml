@@ -8,12 +8,11 @@ steps:
   commands:
   - echo helloz
   - echo worldz
-  - node -v
 - name: test
   image: node:alpine
   commands:
   - export PATH:$PATH:$(pwd)/node_modules/.bin
-  - npm i
+  - npm i --silent
 #  - apk add -U --no-cache git
 #  - mkdir /opt/app
 #  - cd /opt/app
