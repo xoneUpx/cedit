@@ -10,7 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
   <BrowserRouter>
   <AuthProvider>
-    <App />
+    <App name="lol" />
   </AuthProvider>
   </BrowserRouter>
   </React.StrictMode>,

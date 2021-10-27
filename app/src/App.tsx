@@ -1,9 +1,9 @@
 import React from 'react';
-
-function App() {
+import { NameType } from './types/types';
+const App = ( {name}: NameType ) => {
   return (
     <div>
-          Learn React
+          Learn React {name}
           </div>
   );
 }
