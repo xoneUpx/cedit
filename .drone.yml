@@ -11,8 +11,9 @@ steps:
 - name: test
   image: node:alpine
   commands:
-  - export PATH:$PATH:$(pwd)/node_modules/.bin
-  - npm i --silent
+#  - export PATH:$PATH:$(pwd)/node_modules/.bin
+  - npm install
+#- npm i --silent
 #  - apk add -U --no-cache git
 #  - mkdir /opt/app
 #  - cd /opt/app

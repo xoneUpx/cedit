@@ -7,5 +7,7 @@ const App = ( {name}: NameType ) => {
           </div>
   );
 }
-
+//const App2: React.FC<ChildProps> = ({name}) => {
+//return (<div>{name}</div> )
+//}
 export default App;

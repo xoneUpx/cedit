@@ -5,14 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AuthProvider from './auth/AuthProvider';
 import { BrowserRouter } from 'react-router-dom';
+import  ReduxProvider  from './redux/store/ReduxProvider'
 
 ReactDOM.render(
   <React.StrictMode>
+  <ReduxProvider>
   <BrowserRouter>
   <AuthProvider>
     <App name="lol" />
   </AuthProvider>
   </BrowserRouter>
+  </ReduxProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

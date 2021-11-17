@@ -4,7 +4,7 @@ import rootReducer from './rootReducer';
 const persistConfig = {
   storage,
   key: 'root',
-  whitelist: ["darkModeReducer"]
+  whitelist: ["darkMode"]
 
 }
 const persistedReducer = persistReducer(persistConfig, rootReducer)
