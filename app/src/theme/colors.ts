@@ -5,10 +5,11 @@ export const Common = {
 }
 export const AppColors = {
   background: Common.white,
-  font: Common.black
+  font: Common.black,
+  primary: 'yellow'
 
 }
-export const darkmodeColors = {
+export const darkModeColors = {
     background: 'red',
     font: Common.white
 
