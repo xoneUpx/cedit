@@ -9,7 +9,7 @@ RUN apk add -U --no-cache git
 RUN git clone https://github.com/xoneUpx/cedit.git .
 RUN npm i
 #npm build and run on server
-RUN chmod -R 0777 /opt/app/node_modules
+#RUN chmod -R 0777 /opt/app/node_modules
 #for development on k8s
 RUN ["npm", "start"]
 #RUN npm i -D
