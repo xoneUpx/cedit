@@ -14,4 +14,4 @@ const ReduxProvider = (props: PropsWithChildren<{}>) => {
   )
 }
 
-export default ReduxProvider
+export default ReduxProvider;
