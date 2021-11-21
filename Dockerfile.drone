@@ -7,7 +7,7 @@ ENV PATH /opt/app/node_modules/.bin:$PATH
 #USER node
 RUN apk add -U --no-cache git
 RUN git clone https://github.com/xoneUpx/cedit.git .
-RUN npm i
+RUN npm i --perfix ./app
 #npm build and run on server
 #RUN chmod -R 0777 /opt/app/node_modules
 #for development on k8s
