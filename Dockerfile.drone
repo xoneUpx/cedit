@@ -12,5 +12,5 @@ WORKDIR ./app
 #npm build and run on server
 #RUN chmod -R 0777 /opt/app/node_modules
 #for development on k8s
-RUN ["npm", "start"]
+#RUN ["npm", "start"]
 #RUN npm i -D
