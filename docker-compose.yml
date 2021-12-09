@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - './app:/opt/app'
-      - '/opt/app/node_modules'
+      - cedit-vol:/opt/app/node_modules
     ports:
       - 3000:3000
         #environment:
@@ -24,8 +24,12 @@ services:
     working_dir: /opt/app
     environment:
       - CHOKIDAR_USEPOLLING=true
-    #command: ["npm", "run", "s", "--silent"]
     command: ["npm", "start"]
+
+volumes:
+  cedit-vol:
+
+    #command: ["npm", "run", "s", "--silent"]
 #    depends_on:
 #      - node-database
 #

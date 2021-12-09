@@ -1,12 +1,11 @@
 import React, { PropsWithChildren} from 'react'
-import { createMuiTheme , ThemeProvider} from '@material-ui/core'
+import { createTheme, ThemeProvider} from '@material-ui/core/styles'
 import { useAppSelector} from '../redux/store/hooks'
 import { AppColors, darkModeColors} from './colors'
-import React from 'react'
 
-const CustomThemeProvider = (props: PropsWithChildren) => {
+const CustomThemeProvider = (props: PropsWithChildren<{}>) => {
   const darkMode = useAppSelector((state)=> state.darkMode);
-  const theme = createMuiTheme(
+  const theme = createTheme(
     {
       palette: {
         type: darkMode ? 'dark': 'light',
@@ -23,14 +22,15 @@ const CustomThemeProvider = (props: PropsWithChildren) => {
     )
 }
 export default CustomThemeProvider;
-declare module '@mui/material/styles/createMuiTheme' {
+//declare module '@mui/core/styles' {
+declare module '@material-ui/core/styles/createTheme' {
   interface Theme {
     background: string;
     font: string;
-    };
-  }
+    }
+
   // allow configuration using `createTheme`
   interface ThemeOptions {
     background: string;
     font: string;
-  };}
+  }}

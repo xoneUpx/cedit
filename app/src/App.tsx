@@ -1,10 +1,10 @@
 import React from 'react';
 import { NameType } from './types/types';
+import Routes from './routes/Routes'
+
 const App = ( {name}: NameType ) => {
   return (
-    <div>
-          Learn React {name}
-          </div>
+    <Routes />
   );
 }
 //const App2: React.FC<ChildProps> = ({name}) => {

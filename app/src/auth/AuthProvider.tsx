@@ -9,7 +9,7 @@ const AuthProvider = (props: PropsWithChildren<{}>) => {
     history.push(AppState?.returnTo || window.location.pathname)
   }
   return (
-    <Auth0Provider domain={AppConfig.auth0Domain} clientId={AppConfig.auth0ClientId} redirectUrl={window.location.origin} onRedirectCallback={onRedirectCallback}>{props.children}</Auth0Provider>
+    <Auth0Provider domain={AppConfig.auth0Domain} clientId={AppConfig.auth0ClientId} redirectUri={window.location.origin} onRedirectCallback={onRedirectCallback}>{props.children}</Auth0Provider>
 
   )
 

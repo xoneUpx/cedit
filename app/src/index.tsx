@@ -6,13 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import AuthProvider from './auth/AuthProvider';
 import { BrowserRouter } from 'react-router-dom';
 import  ReduxProvider  from './redux/store/ReduxProvider'
+import CustomThemeProvider from './theme/CustomThemeProvider'
 
 ReactDOM.render(
   <React.StrictMode>
   <ReduxProvider>
   <BrowserRouter>
   <AuthProvider>
+  <CustomThemeProvider>
     <App name="lol" />
+  </CustomThemeProvider>
   </AuthProvider>
   </BrowserRouter>
   </ReduxProvider>

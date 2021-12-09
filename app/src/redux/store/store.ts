@@ -9,7 +9,7 @@ const store = configureStore({
    // persistedReducer: persistedReducer,
 //
  // },
-  reduser: persistedReducer,
+  reducer: persistedReducer,
   middleware: getDefaultMiddleware({
     serializableCheck: {
       ignoredActions

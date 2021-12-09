@@ -1,5 +1,7 @@
 import {combineReducers} from 'redux';
-import darkModeReducer from './dark-mode/reducer';
+import darkModeReducer from './reducers/dark-mode/reducer';
+import fileReducer from './reducers/files/reducer'
 
-const rootReducer = combineReducers({ darkMode: darkModeReducer})
+
+const rootReducer = combineReducers({ darkMode: darkModeReducer, files: fileReducer})
 export default rootReducer;
