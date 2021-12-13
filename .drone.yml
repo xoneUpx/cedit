@@ -27,8 +27,10 @@ steps:
     #password: pa55word
     insecure: true
     dockerfile: Dockerfile.drone
-    repo: 10.10.10.3:8080/test-cedit
-    registry: 10.10.10.3:8080
+    #repo: 10.10.10.3:8080/test-cedit
+    repo: repo.localhost:8080/test-cedit
+    #registry: 10.10.10.3:8080
+    registry: repo.localhost:8080
       
       #- name: some tests
       #- name: deploy to k8s
