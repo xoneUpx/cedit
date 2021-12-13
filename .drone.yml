@@ -23,6 +23,7 @@ steps:
 - name: docker
   image: plugins/docker
   settings:
+    add_host: repo.localhost:10.10.10.3
     #username: kevinbacon
     #password: pa55word
     insecure: true
@@ -31,7 +32,6 @@ steps:
     repo: repo.localhost:8080/test-cedit
     #registry: 10.10.10.3:8080
     registry: repo.localhost:8080
-    add_host: repo.localhost:10.10.10.3
       
       #- name: some tests
       #- name: deploy to k8s
