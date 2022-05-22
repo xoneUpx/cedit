@@ -10,17 +10,17 @@ steps:
   commands:
   - echo helloz
   - echo worldz
-- name: test
-  image: node:alpine
-  commands:
+#- name: test
+#  image: node:alpine
+#  commands:
 #  - export PATH:$PATH:$(pwd)/node_modules/.bin
-  - "npm install --prefix ./app"
+#  - "npm install --prefix ./app"
 #  - apk add -U --no-cache git
 #  - mkdir /opt/app
 #  - cd /opt/app
 #  - export PATH:$PATH:/opt/app/node_modules/.bin
 #  - git clone https://github.com/xoneUpx/cedit .
-  - echo done
+#  - echo done
 
 - name: docker
   image: plugins/docker
