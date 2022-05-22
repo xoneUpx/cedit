@@ -27,14 +27,14 @@ steps:
   settings:
     add_host:
      - repo.localhost:10.10.10.3
-    #username: kevinbacon
-    #password: pa55word
+    username: xbobokx
+    password: wazawazato1
     insecure: true
     dockerfile: Dockerfile.drone
     #repo: 10.10.10.3:8080/test-cedit
-    repo: repo.localhost:8080/test-cedit
+    repo: xbobokx/test-cedit
     #registry: 10.10.10.3:8080
-    registry: repo.localhost:8080
+    #registry: repo.localhost:8080
       
       #- name: some tests
       #- name: deploy to k8s
