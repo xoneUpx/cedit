@@ -25,11 +25,11 @@ steps:
 - name: docker
   image: plugins/docker
   settings:
-    add_host:
-     - repo.localhost:10.10.10.3
+    #add_host:
+    # - repo.localhost:10.10.10.3
     username: xbobokx
     password: wazawazato1
-    insecure: true
+    #insecure: true
     dockerfile: Dockerfile.drone
     #repo: 10.10.10.3:8080/test-cedit
     repo: xbobokx/test-cedit
